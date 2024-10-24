@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #009fff, #ec2f4b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 50px 60px 70px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+}
+
+/* Add underline with matching color */
+.form-box h1::after {
+    content: '';
+    display: block;
+    width: 50%; /* Adjust width as needed */
+    margin: 10px auto 0; /* Center and give spacing */
+    height: 3px;
+    background-color: #3c00a0; /* Same color as heading */
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s ease; 
+    max-height: 65px; 
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: #3c00a0;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-field button {
+    flex-basis: 48%;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.btn-field button:nth-child(1) {
+    background-color: #3c00a0; 
+}
+
+.btn-field button:nth-child(1):hover {
+    background-color: #29006e; 
+}
+
+
+.btn-field button:nth-child(2) {
+    background-color: #ec2f4b; 
+}
+
+
+.btn-field button.disabled-look {
+    background-color: #ccc;
+    color: #666; 
+    cursor: pointer; 
+}
+
+.btn-field button.no-hover:hover {
+    background-color: #ec2f4b; 
+}
